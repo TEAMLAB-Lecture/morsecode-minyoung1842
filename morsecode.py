@@ -88,6 +88,7 @@ def is_validated_english_sentence(user_input):
     temp = temp.replace(",", "")
     temp = temp.replace("!", "")
     temp = temp.replace("?", "")
+    temp = temp.replace(" ", "")
     
     if len(temp) == 0: 
         return False
